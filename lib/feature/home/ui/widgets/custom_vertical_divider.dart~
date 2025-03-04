@@ -1,0 +1,20 @@
+
+
+import 'package:flutter/material.dart';
+
+class CustomVerticalDivider extends StatelessWidget {
+  const CustomVerticalDivider({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: VerticalDivider(
+        color: Colors.grey.shade500,
+        thickness: .8,
+      ),
+    );
+  }
+}
