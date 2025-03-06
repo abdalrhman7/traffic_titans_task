@@ -31,42 +31,45 @@ class UpcomingCourseSection extends StatelessWidget {
               children: [
                 Image.asset(width: 100, 'assets/images/logo2.png'),
                 CustomVerticalDivider(),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Icon(Icons.calendar_month),
-                        SizedBox(width: 6.w),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('Today', style: TextStyles.font10BlackBold),
-                            Text('10/02/2025',
-                                style: TextStyles.font10BlackBold),
-                          ],
-                        )
-                      ],
-                    ),
-                    SizedBox(height: 8.h),
-                    Row(
-                      children: [
-                        Icon(Icons.alarm),
-                        SizedBox(width: 6.w),
-                        Text('07:00 - 07:30 pm',
-                            style: TextStyles.font10BlackBold),
-                      ],
-                    ),
-                    SizedBox(height: 8.h),
-                    Row(
-                      children: [
-                        Icon(Icons.alarm),
-                        SizedBox(width: 6.w),
-                        Text('07:00 - 07:30 pm',
-                            style: TextStyles.font10BlackBold),
-                      ],
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.calendar_month),
+                          SizedBox(width: 6.w),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Today', style: TextStyles.font10BlackBold),
+                              Text('10/02/2025',
+                                  style: TextStyles.font10BlackBold),
+                            ],
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 8.h),
+                      Row(
+                        children: [
+                          Icon(Icons.alarm),
+                          SizedBox(width: 6.w),
+                          Text('07:00 - 07:30 pm',
+                              style: TextStyles.font10BlackBold),
+                        ],
+                      ),
+                      SizedBox(height: 8.h),
+                      Row(
+                        children: [
+                          Icon(Icons.alarm),
+                          SizedBox(width: 6.w),
+                          Text('07:00 - 07:30 pm',
+                              style: TextStyles.font10BlackBold),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
                 CustomVerticalDivider(),
                 Column(
@@ -74,12 +77,12 @@ class UpcomingCourseSection extends StatelessWidget {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        border: Border.all(color: ColorsManager.purple),
+                        border: Border.all(color: ColorsManager.purple ,width:2),
                       ),
                       padding: EdgeInsets.all(6),
                       child: Text(
                         'Lesson 06',
-                        style: TextStyles.font10PurpleBold,
+                        style: TextStyles.font12PurpleBold,
                       ),
                     ),
                     SizedBox(height: 10.h),

@@ -22,6 +22,7 @@ class MusicCourseItem extends StatelessWidget {
           Image.asset('assets/images/music_course.png' , width: 120.w, height: 120.h,),
           SizedBox(height: 8.h),
           Text('Name of Course', style: TextStyles.font12BlackBold,),
+          Text('Text will put in this filed', style: TextStyles.font11grayRegular,),
         ],
       ),
     );

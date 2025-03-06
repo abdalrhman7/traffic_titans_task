@@ -1,10 +1,13 @@
+import 'package:e_ramo/feature/home/ui/widgets/articles_section.dart';
 import 'package:e_ramo/feature/home/ui/widgets/slider_section.dart';
 import 'package:e_ramo/feature/home/ui/widgets/top_categories_section.dart';
 import 'package:e_ramo/feature/home/ui/widgets/upcoming_course_section.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'art_course_section.dart';
+import 'discounted_month_section.dart';
 import 'featured_courses_section.dart';
+import 'games_course_section.dart';
 import 'join_now_widget.dart';
 import 'music_course_section.dart';
 
@@ -38,6 +41,9 @@ class HomeScreenBody extends StatelessWidget {
                 const JoinNowWidget(),
                 const MusicCourseSection(),
                 const ArtCourseSection(),
+                const DiscountedMonthSection(),
+                const GamesCourseSection(),
+                const ArticlesSection(),
               ],
             ),
           ),
@@ -46,10 +52,5 @@ class HomeScreenBody extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
 
 

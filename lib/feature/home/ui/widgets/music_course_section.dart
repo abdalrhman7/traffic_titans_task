@@ -16,7 +16,7 @@ class MusicCourseSection extends StatelessWidget {
         ),
         SizedBox(height: 8.h),
         SizedBox(
-          height: 166.h,
+          height: 180.h,
           child: ListView.builder(
             scrollDirection:  Axis.horizontal,
             itemCount: 8,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 import 'app_text_form_faild.dart';
 
@@ -13,16 +14,13 @@ class FilterAndSearchBar extends StatelessWidget {
     return Row(
       children: [
         Container(
-          height: 50,
-          width: 50,
+          height: 48.h,
+          width: 48.w,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             border: Border.all(color: Colors.white, width: 2),
           ),
-          child: Icon(
-            Icons.menu,
-            color: Colors.white,
-          ),
+          child: Center(child: SvgPicture.asset('assets/images/filter1.svg')),
         ),
         SizedBox(width: 12.w),
         Expanded(
